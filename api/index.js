@@ -6,7 +6,7 @@ const port = 3000;
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }))
 
-app.post('/python', (req, res) => {
+app.post('/api/python', (req, res) => {
     const { curlUrl } = req.body
 
     const result = curlconverter.toPython(curlUrl);
