@@ -8,6 +8,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 app.post('/api/python', (req, res) => {
     const { curlUrl } = req.body
+    console.log('fefe')
 
     const result = curlconverter.toPython(curlUrl);
 
